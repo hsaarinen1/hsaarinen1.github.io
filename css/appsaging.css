@@ -1,0 +1,196 @@
+/* Base styles */
+
+body {
+	font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+	background-color: #193091 !important
+}
+
+main {
+	background-color: #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: bold;
+}
+
+b, strong {
+	font-weight: bold !important;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.7) !important; /* Increased opacity to .7 to ensure high enough contrast ratio */
+}
+
+.display-4  {
+	font-weight: bold;
+}
+
+/* Navigation */
+
+.navbar-brand svg {
+	margin-right: 0.3em;
+}
+
+.bg-dark {
+	background-color: #193091 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark  .nav-link.text-success {
+	color: #00ff3a !important;
+}
+
+.navbar-dark  .nav-link.text-success:hover {
+	color: #9bffb2 !important;
+}
+
+.navbar-dark .nav-link.text-login {
+	color: #ff8900;
+}
+
+.navbar-dark .nav-link.text-login:hover {
+	color: #ffb055;
+}
+
+/* Jumbotron aka hero area */
+
+.display-3 {
+	font-weight: bold !important;
+}
+
+.frontpage-heroimage {
+	background-image: url("../img/frontpage-hero-bg-1920x1281.png");
+}
+
+/* Button styles */
+
+.btn  {
+	border-radius: 0 !important;
+}
+
+.btn-lg, .btn-group-lg > .btn  {
+	padding: 0.5rem 1.25rem;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle, .btn-primary {
+    color: #fff;
+    background-color: #193091 !important;
+    border-color: transparent !important;
+}
+
+.btn-primary:hover {
+	background-color: rgba(25,48,145,0.85) !important;
+}
+
+.btn-outline-primary {
+    color: #193091;
+    border-color: #193091;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #193091 !important;
+    border-color: transparent !important;
+}
+
+/* Pricing cards */
+
+.pricing-cards .card-header {
+	background-color: #d9e8f5;
+}
+
+.pricing-cards .card-title {
+	color: #193091;
+}
+
+/* SVG bullets */
+
+.pricing-cards ul {
+  list-style: none;
+  padding-left: 0;
+}
+.pricing-cards li {
+  position: relative;
+  padding-left: 1.5em;
+}
+
+.pricing-cards li:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='18' height='18' viewBox='0 0 1792 1792' fill='green' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>") no-repeat;
+}
+
+/* Testimonials */
+
+.quote {
+	color: #a3f6ff !important;
+	background-color: #30449c !important;
+}
+
+.profile-picture {
+	max-height: 150px;
+}
+
+.quote-light {
+	color: #fff;
+	background-color: #49aef1 !important;
+}
+
+.quote-white {
+	color: #212529;
+	background-color: #fff !important;
+}
+
+.black-box {
+	color: #a3f6ff !important;
+	background-color: #000 !important;
+}
+
+/* About Us */
+
+.about-numbers {
+	color: #fff;
+	background-color: #49aef1 !important;
+}
+
+.hr-teal {
+	border-top: 1px solid #d9e8f5;
+}
+
+/* Footer */
+
+footer {
+	min-height: 300px;
+}
+
+address {
+	padding: 0.5rem 1rem;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+}
+
+.login-form  .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.login-form .form-control:focus {
+  z-index: 2;
+}
+.login-form  input[type="email"], .login-form  input[type="password"] {
+  margin-bottom: -1px;
+  border-radius: 0 !important;
+}
