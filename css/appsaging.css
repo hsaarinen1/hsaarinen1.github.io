@@ -57,6 +57,12 @@ b, strong {
 
 /* Jumbotron aka hero area */
 
+@media (max-width: 575px) {
+  .display-3  {
+    font-size: 3rem !important;
+  }
+}
+
 .display-3 {
 	font-weight: bold !important;
 }
