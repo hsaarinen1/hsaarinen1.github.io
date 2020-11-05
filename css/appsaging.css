@@ -57,6 +57,7 @@ b, strong {
 
 /* Jumbotron aka hero area */
 
+/* Smaller font for smaller screen */
 @media (max-width: 575px) {
   .display-3  {
     font-size: 3rem !important;
