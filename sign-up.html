@@ -21,19 +21,19 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-	<div class="container bg-dark">
+		<div class="container">
 		<a class="navbar-brand" href="index.html">
 		<svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-front" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 		<path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5z"/></svg>
 		AppSaging
 		</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse" id="navbar">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item py-1">
-				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="index.html">Home <span class="sr-only">(current page)</span></a>
 			</li>
 			<li class="nav-item py-1">
 				<a class="nav-link" href="pricing.html">Pricing</a>
@@ -48,15 +48,16 @@
 				<a class="nav-link text-login" href="login.html">Log In</a>
 			</li>
 			<li class="nav-item py-1">
-				<a class="nav-link text-success" href="sign-up.html">Sign Up <span class="sr-only">(current)</span></a>
+				<a class="nav-link text-success" href="sign-up.html">Sign Up</a>
 			</li>
 			</ul>
 		</div>
-	</div>
+		</div>
 	</nav>
 	<main>
 		<div class="container py-5">
 			<div class="col-md-10">
+			<form class="needs-validation">
 				<h1 class="mb-5">Sign up for a free 30 day trial</h1>
 				<h3 class="mb-3">Choose your version</h3>
 					<div class="d-block my-3">
@@ -75,36 +76,23 @@
 					</div>
 				<hr class="mb-4">
 				<h4 class="mb-3">Your information</h4>
-				<form class="needs-validation" novalidate>
 					<div class="row">
 						<div class="col-md-6 mb-3">
 							<label for="firstName">First name</label>
 							<input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-							<div class="invalid-feedback">
-								Valid first name is required.
-							</div>
 						</div>
 						<div class="col-md-6 mb-3">
 							<label for="lastName">Last name</label>
 							<input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-							<div class="invalid-feedback">
-								Valid last name is required.
-							</div>
 						</div>
 					</div>
 					<div class="mb-3">
 						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" placeholder="you@laurea.fi">
-						<div class="invalid-feedback">
-							Please enter a valid email address.
-						</div>
+						<input type="email" class="form-control" id="email" placeholder="you@laurea.fi" required>
 					</div>
 					<div class="mb-3">
 						<label for="companyName">Company name <span class="text-muted">(Optional)</span></label>
 						<input type="text" class="form-control" id="companyName" placeholder="Laurea Leppävaara">
-						<div class="invalid-feedback">
-							Please enter your address.
-					</div>
 					</div>
 					<div class="mb-3">
 						<label for="address">Address</label>
@@ -124,9 +112,6 @@
 								<option value="">Choose...</option>
 								<option>Finland</option>
 							</select>
-							<div class="invalid-feedback">
-								Please select a valid country.
-							</div>
 						</div>
 						<div class="col-md-4 mb-3">
 							<label for="state">State</label>
@@ -134,16 +119,10 @@
 								<option value="">Choose...</option>
 								<option>Uusimaa</option>
 							</select>
-							<div class="invalid-feedback">
-								Please provide a valid state.
-							</div>
 						</div>
 						<div class="col-md-3 mb-3">
 							<label for="zip">Zip</label>
 							<input type="text" class="form-control" id="zip" placeholder="" required>
-							<div class="invalid-feedback">
-								Zip code required.
-							</div>
 						</div>
 					</div>
 					<hr class="mb-4">
@@ -159,32 +138,20 @@
 							<label for="cc-name">Name on card</label>
 							<input type="text" class="form-control" id="cc-name" placeholder="" required>
 							<small class="text-muted">Full name as displayed on card</small>
-							<div class="invalid-feedback">
-								Name on card is required
-							</div>
 						</div>
 						<div class="col-md-6 mb-3">
 							<label for="cc-number">Credit card number</label>
 							<input type="text" class="form-control" id="cc-number" placeholder="" required>
-							<div class="invalid-feedback">
-								Credit card number is required
-							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-3 mb-3">
 							<label for="cc-expiration">Expiration</label>
 							<input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-							<div class="invalid-feedback">
-								Expiration date required
-							</div>
 						</div>
 						<div class="col-md-3 mb-3">
 							<label for="cc-cvv">CVV</label>
 							<input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-							<div class="invalid-feedback">
-								Security code required
-							</div>
 						</div>
 					</div>
 					<hr class="mb-4">
